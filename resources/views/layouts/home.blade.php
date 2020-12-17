@@ -52,5 +52,7 @@
 
 @include('home._footer')
 @yield('footerjs')
+
+
 </body>
 </html>

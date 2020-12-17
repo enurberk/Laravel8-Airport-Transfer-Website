@@ -19,14 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="download jetstream files">
+    <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="updated faq and blog page, updated admin_panel, airport_transfer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +186,8 @@
       <updated>1607263721867</updated>
       <workItem from="1607263723039" duration="9604000" />
       <workItem from="1607280935482" duration="2924000" />
-      <workItem from="1607327924698" duration="516000" />
+      <workItem from="1607327924698" duration="1357000" />
+      <workItem from="1608226610763" duration="2793000" />
     </task>
     <task id="LOCAL-00001" summary="download jetstream files">
       <created>1607282490387</created>
@@ -198,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607282490387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated faq and blog page, updated admin_panel, airport_transfer">
+      <created>1607328622239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607328622239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +223,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="download jetstream files" />
-    <option name="LAST_COMMIT_MESSAGE" value="download jetstream files" />
+    <MESSAGE value="updated faq and blog page, updated admin_panel, airport_transfer" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated faq and blog page, updated admin_panel, airport_transfer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607268117648">
@@ -233,9 +239,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607281057213" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607282498176">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607328650274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607282498176" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607328650274" />
   </component>
 </project>
