@@ -9,7 +9,7 @@
     <section class="about py-5">
         <div class="container py-lg-5 py-3">
             <h3 class="heading text-capitalize text-center">Welcome</h3>
-            <h5 class="heading mb-5 text-center">Taxi Cab</h5>
+            <h5 class="heading mb-5 text-center">Transfer Service</h5>
             <div class="about-head text-center ">
                 <div class="row about-grids-top mb-5">
                     <div class="col-lg-2 col-sm-4 col-6 about-grid p-0">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6 mt-lg-0 mt-5 about-grid p-0">
                         <i class="fa fa-taxi" aria-hidden="true"></i>
-                        <h4>Taxi Cabs</h4>
+                        <h4>Transfer Service</h4>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6 mt-lg-0 mt-5 about-grid p-0">
                         <i class="fa fa-cogs" aria-hidden="true"></i>
@@ -58,8 +58,8 @@
     <!-- Why taxi cab -->
     <section class="why">
         <div class="container-fluid p-md-5 p-3">
-            <h3 class="heading text-capitalize text-center">Why taxi cab</h3>
-            <h5 class="heading mb-5 text-center">Taxi Cab</h5>
+            <h3 class="heading text-capitalize text-center">Why Transfer Service</h3>
+            <h5 class="heading mb-5 text-center">Transfer Service</h5>
             <div class="row why-grids">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="py-5 px-2 mb-4 grid1 text-center">
@@ -94,7 +94,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="py-5 px-2 mb-md-0 mb-4 grid6 text-center">
                         <h4 class="mx-auto"><span>6</span></h4>
-                        <p class="mt-5">Best Quality Cabs</p>
+                        <p class="mt-5">Best Quality Cars</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -106,7 +106,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="py-5 px-2 grid8 text-center">
                         <h4 class="mx-auto"><span>8</span></h4>
-                        <p class="mt-5">24/7 Cab Service</p>
+                        <p class="mt-5">24/7 Transfer Service</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
     <section class="wthree-row py-5">
         <div class="container py-lg-5 py-3">
             <h3 class="heading text-capitalize text-center">Our Drivers</h3>
-            <h5 class="heading mb-5 text-center">Taxi Cab</h5>
+            <h5 class="heading mb-5 text-center">Transfer Service</h5>
             <div class="row text-center">
                 <div class="col-lg-3 col-sm-6 col-6 team-grids">
                     <div class="team-effect">
@@ -127,7 +127,7 @@
                     <!-- team text -->
                     <div class="footerv2-w3ls mt-3">
                         <h4>John Smith</h4>
-                        <p class="my-2">Taxi Driver</p>
+                        <p class="my-2">Driver</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> 12(00) 123 1234</p>
                     </div>
                     <!-- //team text -->
@@ -139,7 +139,7 @@
                     <!-- team text -->
                     <div class="footerv2-w3ls mt-3">
                         <h4>Laura Hill</h4>
-                        <p class="my-2">Taxi Driver</p>
+                        <p class="my-2">Driver</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> 12(00) 123 1235</p>
                     </div>
                     <!-- //team text -->
@@ -151,7 +151,7 @@
                     <!-- team text -->
                     <div class="footerv2-w3ls mt-3">
                         <h4>Smith Kevin</h4>
-                        <p class="my-2">Taxi Driver</p>
+                        <p class="my-2">Driver</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> 12(00) 123 1236</p>
                     </div>
                     <!-- //team text -->
@@ -163,7 +163,7 @@
                     <!-- team text -->
                     <div class="footerv2-w3ls mt-3">
                         <h4>Thomson Doe</h4>
-                        <p class="my-2">Taxi Driver</p>
+                        <p class="my-2">Driver</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> 12(00) 123 1237</p>
                     </div>
                     <!-- //team text -->
@@ -177,7 +177,7 @@
     <section class="prices py-5">
         <div class="container py-lg-5 py-3">
             <h3 class="heading text-capitalize text-center">Our Pricing</h3>
-            <h5 class="heading mb-5 text-center">Taxi Cab</h5>
+            <h5 class="heading mb-5 text-center">Transfer Service</h5>
             <div class="row pricing-grids">
                 <div class="col-lg-3 col-md-6 price-grid">
                     <h3 class="mb-4">Micro Taxi -- <span class="">2$</span></h3>
@@ -227,7 +227,7 @@
     <section class="testimonials banner-bottom-agile-w3ls py-5">
         <div class="container py-lg-5 py-3">
             <h3 class="heading text-capitalize text-center">Testimonial</h3>
-            <h5 class="heading mb-5 text-center">Taxi Cab</h5>
+            <h5 class="heading mb-5 text-center">Transfer Service</h5>
             <div class="inner-sec-w3layouts-agileits">
                 <div class="owl-carousel owl-theme">
                     <div class="item">

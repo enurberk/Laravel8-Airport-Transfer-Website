@@ -9,7 +9,7 @@
                     <div class="bs-slider-overlay">
                         <div class="banner-info text-center">
                             <span class="fas fa-taxi"></span>
-                            <h1>24/7 Taxi Service </h1>
+                            <h1>24/7 Airport Transfer Service </h1>
                             <h2 class="mb-5"><i class="fas fa-phone"></i> 12(00) 123 1234</h2>
                             <a href="booking.html">Book Now </a>
                         </div>
@@ -21,7 +21,7 @@
                     <div class="bs-slider-overlay">
                         <div class="banner-info text-center">
                             <span class="fas fa-taxi"></span>
-                            <h4>Online Cab Booking</h4>
+                            <h4>Online Transfer Booking</h4>
                             <h5 class="mb-5">No Extra Charges</h5>
                             <a href="booking.html">Book Now </a>
                         </div>
@@ -46,7 +46,7 @@
                         <div class="banner-info text-center">
                             <span class="fas fa-taxi"></span>
                             <h4>Travel Safe & Secure</h4>
-                            <h5 class="mb-5">Assured Cab Service</h5>
+                            <h5 class="mb-5">Assured Transfer Service</h5>
                             <a href="booking.html">Book Now </a>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
             </li>
 
         </ul>
+        </div>
     </div>
 </div>
-
 <!-- //banner -->
