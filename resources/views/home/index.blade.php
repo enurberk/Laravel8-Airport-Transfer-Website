@@ -39,14 +39,19 @@
                 </div>
                 <div class="row about-grids-bottom text-left">
                     <div class="col-md-4 mb-md-0 mb-5 about-bottom-grid">
-                        <h4 class="mb-4">Lorem ipsum dolor sit amet, In consectetur adipiscing elit. Etiam commodo urna dolor,</h4>
+                        <h4 class="mb-4">We have been offering comfortable and safe journeys since our foundation day…</h4>
                         <a href="about.html"> More About Us</a>
                     </div>
                     <div class="col-md-4 about-bottom-grid">
-                        <p>Lorem ipsum dolor sit init amet, consectetur elit adipiscing elit. Etiam commodo urna dolor, eget lacinia est aliquam id. Proin velit libero, vestibul umac orci eu, faucibus consectetur dolor. Cras ullamcorper elit eros, nec bibendum lacus accumsan eu. Donec non </p>
-                    </div>
+                        <p>We have set off to transfer our tourism experience of 25 years to tourism transportation.
+                            Beyond transferring you from one point to another, we are your fellow traveler.
+                            Before our companionship, we make the necessary preparations. </p>  </div>
                     <div class="col-md-4 about-bottom-grid">
-                        <p>Lorem ipsum dolor sit init amet, consectetur elit adipiscing elit. Etiam commodo urna dolor, eget lacinia est aliquam id. Proin velit libero, vestibul umac orci eu, faucibus consectetur dolor. Cras ullamcorper elit eros, nec bibendum lacus accumsan eu. Donec non </p>
+                        <p>We obtain the road and traffic information of your destination in advance,
+                            and carry you to your destination safely, rapidly, and at affordable prices.
+                            What we expect you to do is to evaluate us and prefer us for your next travel,
+                            and also recommend us to your friends.
+                            Have a Nice Trip! </p>
                     </div>
                 </div>
             </div>
@@ -182,7 +187,6 @@
                 <div class="col-lg-3 col-md-6 price-grid">
                     <h3 class="mb-4">Micro Taxi -- <span class="">2$</span></h3>
                     <h4 class="my-3">Small fares for short rides</h4>
-                    <p> Curabitur eu neque nec ante sagittis dapibus et eu purus. Proin et erat tempus, tempor sapien ac, faucibus nibh.</p>
                     <ul class="d-flex mt-3">
                         <li class="mr-3">2 <i class="fas fa-male" aria-hidden="true"></i></li>
                         <li class="mr-3">1 <i class="fas fa-suitcase" aria-hidden="true"></i></li>
@@ -191,8 +195,7 @@
                 <div class="col-lg-3 col-md-6 mt-md-0 mt-5 price-grid">
                     <h3 class="mb-4">Mini Taxi -- <span class="">3$</span></h3>
                     <h4 class="my-3">Small fares for short rides</h4>
-                    <p> Curabitur eu neque nec ante sagittis dapibus et eu purus. Proin et erat tempus, tempor sapien ac, faucibus nibh.</p>
-                    <ul class="d-flex mt-3">
+                   <ul class="d-flex mt-3">
                         <li class="mr-3">2 <i class="fas fa-male" aria-hidden="true"></i></li>
                         <li class="mr-3">2 <i class="fas fa-suitcase" aria-hidden="true"></i></li>
                         <li class="mr-3">1 <i class="fas fa-wifi" aria-hidden="true"></i></li>
@@ -201,7 +204,6 @@
                 <div class="col-lg-3 col-md-6 mt-lg-0 mt-5 price-grid">
                     <h3 class="mb-4">Prime Taxi -- <span class="">4$</span></h3>
                     <h4 class="my-3">Small fares for short rides</h4>
-                    <p> Curabitur eu neque nec ante sagittis dapibus et eu purus. Proin et erat tempus, tempor sapien ac, faucibus nibh.</p>
                     <ul class="d-flex mt-3">
                         <li class="mr-3">3 <i class="fas fa-male" aria-hidden="true"></i></li>
                         <li class="mr-3">2 <i class="fas fa-suitcase" aria-hidden="true"></i></li>
@@ -211,7 +213,6 @@
                 <div class="col-lg-3 col-md-6 mt-lg-0 mt-5 price-grid">
                     <h3 class="mb-4">Sedan Taxi -- <span class="">5$</span></h3>
                     <h4 class="my-3">Small fares for short rides</h4>
-                    <p> Curabitur eu neque nec ante sagittis dapibus et eu purus. Proin et erat tempus, tempor sapien ac, faucibus nibh.</p>
                     <ul class="d-flex mt-3">
                         <li class="mr-3">4 <i class="fas fa-male" aria-hidden="true"></i></li>
                         <li class="mr-3">3 <i class="fas fa-suitcase" aria-hidden="true"></i></li>
@@ -233,7 +234,10 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                <p> The driver was really smart, always smiled and was really friendly.
+                                    The driver was always prompt and never even 1 second late.
+                                    Best transfer company I have ever used, thank you very much easy go transfers
+                                    you are amazing </p>
                             </div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
@@ -250,7 +254,9 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                <p> Very good service and good price, and nice vehicle too!
+                                    Pickup timing was perfect at the airPort and also at the hotel!
+                                    I will absolutly recomand to all my friends! </p>
                             </div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
@@ -267,7 +273,8 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+                                <p> Very easy to take contact by whatsapp and price was perfect.
+                                    The car was very clean and the drivers were friendly and always came in time. </p>
                             </div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
@@ -284,8 +291,10 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-                            </div>
+                                <p> The driver was really smart, always smiled and was really friendly.
+                                    The driver was always prompt and never even 1 second late.
+                                    Best transfer company I have ever used, thank you very much easy go transfers
+                                    you are amazing </p></div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
                                     <img src="{{asset('assets')}}/images/team3.jpg" class="img-fluid" alt="" />
@@ -301,8 +310,9 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-                            </div>
+                                <p> Very good service and good price, and nice vehicle too!
+                                    Pickup timing was perfect at the airPort and also at the hotel!
+                                    I will absolutly recomand to all my friends! </p>	</div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
                                     <img src="{{asset('assets')}}/images/team1.jpg" class="img-fluid" alt="" />
@@ -318,8 +328,8 @@
                     <div class="item">
                         <div class="feedback-info">
                             <div class="feedback-top p-4 p-4">
-                                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-                            </div>
+                                <p> Very easy to take contact by whatsapp and price was perfect.
+                                    The car was very clean and the drivers were friendly and always came in time. </p></div>
                             <div class="feedback-grids">
                                 <div class="feedback-img">
                                     <img src="{{asset('assets')}}/images/team3.jpg" class="img-fluid" alt="" />
@@ -337,5 +347,6 @@
         </div>
     </section>
     <!--//testimonials-->
+
 
 @endsection

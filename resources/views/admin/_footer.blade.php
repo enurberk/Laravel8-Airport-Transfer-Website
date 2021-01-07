@@ -237,3 +237,5 @@
 </script>
 <script src="{{asset('assets')}}/admin/js/apps.js"></script>
 
+</body>
+</html>
