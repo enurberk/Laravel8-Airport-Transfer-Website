@@ -15,6 +15,13 @@
               </svg>
             </a>
         </div>
+        <div class="info">
+
+            @auth
+                <a href="#" class="d-block"> {{Auth::user()->name}} </a>
+                <a href="{{route('admin_logout')}}" class="d-block">Logout</a>
+            @endauth
+        </div>
         <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item dropdown">
                 <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">

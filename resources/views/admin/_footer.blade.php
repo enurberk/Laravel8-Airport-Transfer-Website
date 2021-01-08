@@ -1,5 +1,5 @@
 <!--I dont have footer but i put js css coden in this script -->
-</div> <!-- .wrapper -->
+
 <script src="{{asset('assets')}}/admin/js/jquery.min.js"></script>
 <script src="{{asset('assets')}}/admin/js/popper.min.js"></script>
 <script src="{{asset('assets')}}/admin/js/moment.min.js"></script>
@@ -237,5 +237,3 @@
 </script>
 <script src="{{asset('assets')}}/admin/js/apps.js"></script>
 
-</body>
-</html>

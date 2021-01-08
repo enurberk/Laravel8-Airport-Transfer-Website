@@ -20,19 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="updated faq and blog page, updated admin_panel, airport_transfer">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_vehicles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/admin_panel/dark/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/admin_panel/dark/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +171,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -202,6 +199,7 @@
       <workItem from="1608226610763" duration="2797000" />
       <workItem from="1610017164822" duration="15775000" />
       <workItem from="1610054147948" duration="1478000" />
+      <workItem from="1610094763524" duration="9672000" />
     </task>
     <task id="LOCAL-00001" summary="download jetstream files">
       <created>1607282490387</created>
@@ -241,14 +239,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated faq and blog page, updated admin_panel, airport_transfer" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610113528637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610113528637" />
     <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607268117648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607268117648" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610044959067">
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1610114545470">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610044959067" />
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610114545470" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1610114545469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610114545469" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1610114545468">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610114545468" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1610114545469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610114545469" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610114552697">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1610114552697" />
+    <state x="513" y="87" key="NewPhpClassDialog" timestamp="1610125352811">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1610125352811" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610118837581">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610118837581" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1607281057213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

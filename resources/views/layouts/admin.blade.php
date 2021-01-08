@@ -34,5 +34,6 @@
 @yield('content')
 @include ('admin._footer')
 @yield('footer')
+</div> <!-- .wrapper -->
 </body>
 </html>
