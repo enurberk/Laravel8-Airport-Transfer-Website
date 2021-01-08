@@ -19,55 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="updated faq and blog page, updated admin_panel, airport_transfer">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79/storage_v2/_src_/schema/mysql.osA4Bg.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/apexcharts.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/apexcharts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/apps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/d3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/datamaps-zoomto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/datamaps.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/datamaps.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dropzone.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/fullcalendar.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/fullcalendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/gauge.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.mask.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.sparkline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.steps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.stickOnScroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.timepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/quill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/simplebar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/tinycolor-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/topojson.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/uppy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+    <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_202103_create_categories_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/admin_panel/dark/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/admin_panel/dark/auth-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +197,8 @@
       <workItem from="1608226610763" duration="2797000" />
       <workItem from="1610017164822" duration="15775000" />
       <workItem from="1610054147948" duration="1478000" />
-      <workItem from="1610094763524" duration="9911000" />
+      <workItem from="1610094763524" duration="11523000" />
+      <workItem from="1610134978692" duration="4699000" />
     </task>
     <task id="LOCAL-00001" summary="download jetstream files">
       <created>1607282490387</created>
