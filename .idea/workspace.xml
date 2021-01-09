@@ -20,13 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_202103_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79/storage_v2/_src_/schema/mysql.osA4Bg.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/341f3b68-2b6b-4784-959e-291f55d12d79/storage_v2/_src_/schema/mysql.osA4Bg.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/_vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/_vehicles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/airport_transfer/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,10 +176,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Php\laravelj\resources\views\admin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -198,7 +207,9 @@
       <workItem from="1610017164822" duration="15775000" />
       <workItem from="1610054147948" duration="1478000" />
       <workItem from="1610094763524" duration="11523000" />
-      <workItem from="1610134978692" duration="4699000" />
+      <workItem from="1610134978692" duration="4832000" />
+      <workItem from="1610171815496" duration="1787000" />
+      <workItem from="1610210915405" duration="5948000" />
     </task>
     <task id="LOCAL-00001" summary="download jetstream files">
       <created>1607282490387</created>
@@ -238,10 +249,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated faq and blog page, updated admin_panel, airport_transfer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610113528637">
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610223364442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610113528637" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610223364442" />
     <state x="452" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607268117648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -270,10 +281,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1610125352811" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610118837581">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610222046539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610118837581" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610222046539" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1607281057213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -282,5 +293,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607328650274" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1610219061176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610219061176" />
   </component>
 </project>

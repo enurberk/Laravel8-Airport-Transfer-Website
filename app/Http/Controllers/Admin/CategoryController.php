@@ -16,7 +16,7 @@ class CategoryController extends Controller
     public function index()
     {
         //
-        echo "Category List";
+        return view('admin.category');
     }
 
     /**
