@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','Category List')
+@section('title','Edit Category')
 
 @section('content')
 
@@ -8,61 +8,72 @@
     <main role="main" class="main-content">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12-center">
-                <h1 class="page-title">Categories</h1>
-            </div>
-        </div>
-        <h2 class="mb-2 page-title">Category List</h2>
-        <div class="row justify-content">
-                   <div class="row my-xl-4">
-                        <!-- Small table -->
-                        <div class="col-md-12">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <!-- table -->
-                                    <table class="table datatables" id="dataTable-1">
-
-                                        <div class="float-right">
-                                            <a href="{{route('admin_category_add')}}">
-                                            <button class="btn btn-primary float-right ml-3" type="button">Add more +</button>
-                                            </a>
-                                        </div>
-
-                                           <thead>
-                                           <tr>
-                                               <th>Id</th>
-                                               <th>Parent Id</th>
-                                               <th>Title</th>
-                                               <th>Status</th>
-                                               <th>Edit</th>
-                                               <th>Delete</th>
-                                           </tr>
-                                           </thead>
-                                        <tbody>
-                                        @foreach($datalist as $rs)
-                                        <tr>
-                                            <td>{{$rs -> id}}</td>
-                                            <td>{{$rs -> parent_id}}</td>
-                                            <td>{{$rs -> title}}</td>
-                                            <td>{{$rs -> status}}</td>
-                                            <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">Edit</a></td>
-                                            <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!Are you sure?')">Delete</a></td>
-                                        </tr>
-                                        @endforeach
-                                        </tbody>
-                                        </table>
-                                </div>
-                            </div>
-                        </div> <!-- simple table -->
-                    </div> <!-- end section -->
+            <div class="col-12">
+                <h1 class="page-title">Edit Category</h1>
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
 
+        <div class="card shadow mb-4">
+            <div class="card-header">
+                <strong class="card-title">Edit Category</strong>
+            </div>
+            <div class="card-body">
+                <form action="{{route('admin_category_update',['id'=>$data->id])}}" method="post">
+                    @csrf
+                    <div class="form-group">
+                        <div class="form-group col-md-6">
+
+                            <label>Parent Id</label>
+                            <select name="parent_id" class="form-control">
+                                <option value="0" >Main Category</option>
+                                @foreach($datalist as $rs)
+                                <option value="{{$rs -> id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>{{$rs -> title}}</option>
+                                @endforeach
+                            </select>
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Title</label>
+                            <input type="text" name="title" value="{{$data->title}}" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-group col-md-6">
+                        <label>Keywords</label>
+                        <input type="text" name="keywords" value="{{$data->keywords}}" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-md-6">
+                            <label>Description</label>
+                            <input type="text" name="description" value="{{$data->description}}" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-md-6">
+                            <label>Slug</label>
+                            <input type="text" name="slug" value="{{$data->slug}}" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-group col-md-6">
+                        <label>Status</label>
+                        <select name="status" class="form-control">
+                            <option selected="selected">{{$data->status}}</option>
+                            <option >False</option>
+                            <option>True</option>
+                        </select>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Category</button>
+                </form>
+            </div>
+        </div>
 
 
 
-        <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -187,18 +198,4 @@
     </div>
 </main> <!-- main -->
 </div> <!-- .wrapper -->
-@endsection
-@section('footer')
-    <script src='{{asset('assets')}}/admin/js/jquery.dataTables.min.js'></script>
-    <script src='{{asset('assets')}}/admin/js/dataTables.bootstrap4.min.js'></script>
-    <script>
-        $('#dataTable-1').DataTable(
-            {
-                autoWidth: true,
-                "lengthMenu": [
-                    [16, 32, 64, -1],
-                    [16, 32, 64, "All"]
-                ]
-            });
-    </script>
 @endsection
