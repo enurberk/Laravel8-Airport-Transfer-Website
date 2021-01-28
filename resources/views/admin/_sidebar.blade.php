@@ -44,13 +44,13 @@
             </li>
         </ul>
 
-        <!--Product-->
+        <!--Tranfer-->
         <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item dropdown">
-                <a href="{{route('admin_category')}}" class="dropdown-toggle nav-link">
+                <a href="{{route('admin_transfers')}}" class="nav-link">
                     <i class="fe fe-home fe-16"></i>
                     <span class="ml-3 item-text"></span>
-                    Product
+                    Transfer
                 </a>
             </li>
         </ul>
