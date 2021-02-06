@@ -24,6 +24,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/admin/css/app-light.css" id="lightTheme" disabled>
     <link rel="stylesheet" href="{{asset('assets')}}/admin/css/app-dark.css" id="darkTheme">
+
     @yield('css')
     @yield('javascript')
 </head>

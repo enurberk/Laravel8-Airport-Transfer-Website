@@ -33,6 +33,7 @@
                                                <th>Id</th>
                                                <th>Category</th>
                                                <th>Title</th>
+                                               <th>Image</th>
                                                <th>Base Price</th>
                                                <th>KM Price</th>
                                                <th>Capacity</th>
@@ -47,6 +48,11 @@
                                             <td>{{$rs -> id}}</td>
                                             <td>{{$rs -> category_id}}</td>
                                             <td>{{$rs -> title}}</td>
+                                            <td>
+                                                @if($rs -> image)
+                                                    <img src="{{Storage::url($rs -> image)}}" height="30" alt="">
+                                                @endif
+                                            </td>
                                             <td>{{$rs -> base_price}}</td>
                                             <td>{{$rs -> km_price}}</td>
                                             <td>{{$rs -> capacity}}</td>

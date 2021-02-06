@@ -32,6 +32,7 @@
 <script src='{{asset('assets')}}/admin/js/dropzone.min.js'></script>
 <script src='{{asset('assets')}}/admin/js/uppy.min.js'></script>
 <script src='{{asset('assets')}}/admin/js/quill.min.js'></script>
+
 <script>
     $('.select2').select2(
         {

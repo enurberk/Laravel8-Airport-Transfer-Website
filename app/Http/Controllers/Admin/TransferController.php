@@ -8,6 +8,7 @@ use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class TransferController extends Controller
 {
@@ -53,6 +54,8 @@ class TransferController extends Controller
         $data -> km_price = $request -> input('km_price');
         $data -> capacity = $request -> input('capacity');
         $data -> detail = $request -> input('detail');
+        $data -> image = Storage::putFile('images', $request->file(('image'))); //file upload
+
         $data -> save();
         return redirect() -> route('admin_transfers');
     }
@@ -102,6 +105,8 @@ class TransferController extends Controller
         $data -> km_price = $request -> input('km_price');
         $data -> capacity = $request -> input('capacity');
         $data -> detail = $request -> input('detail');
+        $data -> image = Storage::putFile('images', $request->file(('image'))); //file upload
+
         $data -> save();
         return redirect() -> route('admin_transfers');
     }

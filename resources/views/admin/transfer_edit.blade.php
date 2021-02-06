@@ -1,7 +1,11 @@
 @extends('layouts.admin')
 
 @section('title','Edit Transfer')
-
+@section('javascript')
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+@endsection()
 @section('content')
 
 <div class="wrapper">
@@ -19,7 +23,7 @@
                 <strong class="card-title">Edit Transfer</strong>
             </div>
             <div class="card-body">
-                <form action="{{route('admin_transfer_update', ['id'=>$data->id])}}" method="post">
+                <form action="{{route('admin_transfer_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <div class="form-group col-md-6">
@@ -35,6 +39,15 @@
                         <div class="form-group col-md-6">
                             <label>Title</label>
                             <input type="text" name="title" value="{{$data->title}}" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-md-6">
+                            <label>Image</label>
+                            <input type="file" name="image" value="{{$data->image}}" class="form-control">
+                            @if($data -> image)
+                                <img src="{{Storage::url($data -> image)}}" height="60" alt="">
+                            @endif
                         </div>
                     </div>
                     <div class="form-group">
@@ -70,7 +83,23 @@
                     <div class="form-group">
                         <div class="form-group col-md-6">
                             <label>Detail</label>
-                            <input type="text" name="detail" value="{{$data->detail}}" class="form-control">
+                            <textarea id="summernote" name="detail">{{$data->detail}}</textarea>
+                            <script>
+                                $('#summernote').summernote({
+                                    placeholder: 'Hello stand alone ui',
+                                    tabsize: 2,
+                                    height: 120,
+                                    toolbar: [
+                                        ['style', ['style']],
+                                        ['font', ['bold', 'underline', 'clear']],
+                                        ['color', ['color']],
+                                        ['para', ['ul', 'ol', 'paragraph']],
+                                        ['table', ['table']],
+                                        ['insert', ['link', 'picture', 'video']],
+                                        ['view', ['fullscreen', 'codeview', 'help']]
+                                    ]
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="form-group">
