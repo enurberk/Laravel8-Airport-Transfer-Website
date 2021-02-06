@@ -34,6 +34,7 @@
                                                <th>Category</th>
                                                <th>Title</th>
                                                <th>Image</th>
+                                               <th>Image Gallery</th>
                                                <th>Base Price</th>
                                                <th>KM Price</th>
                                                <th>Capacity</th>
@@ -53,12 +54,30 @@
                                                     <img src="{{Storage::url($rs -> image)}}" height="30" alt="">
                                                 @endif
                                             </td>
+                                            <td>
+                                                <a href="{{route('admin_image_add', ['transfer_id'=>$rs->id])}}"
+                                                onclick="return !window.open(this.href, '', 'top=50 left=100 width=1100, height=700')">
+                                                <div class="p-3">
+                                                    <span class="fe fe-24 fe-image"></span>
+                                                </div>
+                                                <span class="small text-muted"></span>
+                                                </a>
+                                            </td>
                                             <td>{{$rs -> base_price}}</td>
                                             <td>{{$rs -> km_price}}</td>
                                             <td>{{$rs -> capacity}}</td>
                                             <td>{{$rs -> status}}</td>
-                                            <td><a href="{{route('admin_transfer_edit', ['id' => $rs->id])}}">Edit</a></td>
-                                            <td><a href="{{route('admin_transfer_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!Are you sure?')">Delete</a></td>
+                                            <td><a href="{{route('admin_transfer_edit', ['id' => $rs->id])}}">
+                                                <div class="p-3">
+                                                    <span class="fe fe-24 fe-edit"></span>
+                                                </div><span class="small text-muted"></span>
+                                                </a>
+                                            </td>
+                                            <td><a href="{{route('admin_transfer_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">
+                                                 <div class="p-3">
+                                                     <span class="fe fe-24 fe-delete"></span>
+                                                 </div><span class="small text-muted"></span>
+                                            </a></td>
                                         </tr>
                                         @endforeach
                                         </tbody>

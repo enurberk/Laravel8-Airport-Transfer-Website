@@ -45,8 +45,16 @@
                                             <td>{{$rs -> parent_id}}</td>
                                             <td>{{$rs -> title}}</td>
                                             <td>{{$rs -> status}}</td>
-                                            <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">Edit</a></td>
-                                            <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete!Are you sure?')">Delete</a></td>
+                                            <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">
+                                                    <div class="p-3">
+                                                        <span class="fe fe-24 fe-edit"></span>
+                                                    </div><span class="small text-muted"></span>
+                                                </a></td>
+                                            <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">
+                                                    <div class="p-3">
+                                                        <span class="fe fe-24 fe-delete"></span>
+                                                    </div><span class="small text-muted"></span>
+                                                </a></td>
                                         </tr>
                                         @endforeach
                                         </tbody>

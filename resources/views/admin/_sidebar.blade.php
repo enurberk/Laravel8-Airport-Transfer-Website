@@ -25,7 +25,7 @@
                         <span class="ml-3 item-text">{{Auth::user()->name}}</span>
                     </a>
                         <a href="{{route('admin_logout')}}" aria-expanded="false" class="nav-link">
-                            <i class="fe fe-user fe-16"></i>
+                            <i class="fe fe-16 fe-log-out"></i>
                             <span class="ml-3 item-text">Logout</span>
                         </a>
                     </a>

@@ -24,6 +24,7 @@ Route::get('/', [HomeController::class,'index']);
 //admin
 Route::middleware('auth')->prefix('admin')->group(function(){
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index']) ->name('admin_home');
+
     #category
     Route::get('category',[\App\Http\Controllers\Admin\CategoryController::class,'index'])->name('admin_category');
     Route::get('category/add',[\App\Http\Controllers\Admin\CategoryController::class,'add'])->name('admin_category_add');
@@ -36,12 +37,20 @@ Route::middleware('auth')->prefix('admin')->group(function(){
     #transfer
     Route::prefix('transfer')->group(function(){
         Route::get('/',[\App\Http\Controllers\Admin\TransferController::class,'index'])->name('admin_transfers');
-        Route::get('/create',[\App\Http\Controllers\Admin\TransferController::class,'create'])->name('admin_transfer_add');
+        Route::get('create',[\App\Http\Controllers\Admin\TransferController::class,'create'])->name('admin_transfer_add');
         Route::post('store',[\App\Http\Controllers\Admin\TransferController::class,'store'])->name('admin_transfer_store');
         Route::get('edit/{id}',[App\Http\Controllers\Admin\TransferController::class,'edit'])->name('admin_transfer_edit');
         Route::post('update/{id}',[App\Http\Controllers\Admin\TransferController::class,'update'])->name('admin_transfer_update');
         Route::get('delete/{id}',[App\Http\Controllers\Admin\TransferController::class,'destroy'])->name('admin_transfer_delete');
         Route::get('show',[App\Http\Controllers\Admin\TransferController::class,'show'])->name('admin_transfer_show');
+    });
+
+    #Transfer Image Gallery
+    Route::prefix('image')->group(function(){
+        Route::get('create/{transfer_id}',[\App\Http\Controllers\Admin\ImageController::class,'create'])->name('admin_image_add');
+        Route::post('store/{transfer_id}',[\App\Http\Controllers\Admin\ImageController::class,'store'])->name('admin_image_store');
+        Route::get('delete/{id}/{transfer_id}',[App\Http\Controllers\Admin\ImageController::class,'destroy'])->name('admin_image_delete');
+        Route::get('show',[App\Http\Controllers\Admin\ImageController::class,'show'])->name('admin_image_show');
     });
 });
 
