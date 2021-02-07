@@ -105,7 +105,9 @@ class TransferController extends Controller
         $data -> km_price = $request -> input('km_price');
         $data -> capacity = $request -> input('capacity');
         $data -> detail = $request -> input('detail');
-        $data -> image = Storage::putFile('images', $request->file(('image'))); //file upload
+        if($request->file('image')!=null){
+            $data -> image = Storage::putFile('images', $request->file(('image'))); //file upload
+        }
 
         $data -> save();
         return redirect() -> route('admin_transfers');

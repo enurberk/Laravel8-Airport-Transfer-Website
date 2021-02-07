@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Transfer extends Model
 {
     use HasFactory;
+
+    #One to Many(Inverse) / Belongs to
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
 }
