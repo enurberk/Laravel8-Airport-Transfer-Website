@@ -30,7 +30,8 @@ class TransferController extends Controller
      */
     public function create()
     {
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
+        //$datalist = Category::all();
         return view('admin.transfer_add', ['datalist'=> $datalist]);
     }
 
@@ -80,7 +81,8 @@ class TransferController extends Controller
     public function edit(Transfer $transfer, $id)
     {
         $data = Transfer::find($id);
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
+        //$datalist = Category::all();
         return view('admin.transfer_edit', ['data' => $data, 'datalist' => $datalist]);
     }
 

@@ -1,3 +1,6 @@
+@php
+    $parentCategories = \App\Http\Controllers\Admin\HomeController::categoryList()
+@endphp
 <!-- header -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light top-header">
@@ -19,6 +22,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="booking.html">Booking</a>
                 </li>
+
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">
@@ -27,9 +32,22 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item text-center" href="services.html">Services</a>
                         <a class="dropdown-item text-center" href="_vehicles.html">Vehicles</a>
-
+                       @foreach($parentCategories as $rs)
+                            <ul class="navbar-nav mx-auto">
+                                <li  style="color: black;font-family:'Arial Black'" class="nav-link dropdown-toggle">
+                                    {{$rs->title}}
+                                    <ul>
+                                        @if(count($rs->children))
+                                            @include('home.categorytree', ['children' => $rs->children])
+                                        @endif
+                                    </ul>
+                                </li>
+                            </ul>
+                      @endforeach
                     </div>
                 </li>
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>

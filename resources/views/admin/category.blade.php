@@ -31,7 +31,7 @@
                                            <thead>
                                            <tr>
                                                <th>Id</th>
-                                               <th>Parent Id</th>
+                                               <th>Parent</th>
                                                <th>Title</th>
                                                <th>Status</th>
                                                <th>Edit</th>
@@ -42,7 +42,9 @@
                                         @foreach($datalist as $rs)
                                         <tr>
                                             <td>{{$rs -> id}}</td>
-                                            <td>{{$rs -> parent_id}}</td>
+                                            <td>
+                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }}
+                                            </td>
                                             <td>{{$rs -> title}}</td>
                                             <td>{{$rs -> status}}</td>
                                             <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">
