@@ -55,6 +55,16 @@
             </li>
         </ul>
 
+        <!--Setting-->
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+                <a href="{{route('admin_setting')}}" class="nav-link">
+                    <i class="fe fe-16 fe-settings"></i>
+                    <span class="ml-3 item-text"></span>
+                    Setting
+                </a>
+            </li>
+        </ul>
 
     </nav>
 </aside>
