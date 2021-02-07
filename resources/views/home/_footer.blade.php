@@ -1,3 +1,6 @@
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 <!--footer-->
 <footer class="py-sm-5 py-4 px-md-5 px-3">
     <div class="container-fluid pt-lg-5">
@@ -5,17 +8,17 @@
             <div class="col-lg-3 col-sm-6 mb-lg-0 mb-5 footer-grid-agileits-w3ls1 text-left">
                 <h3 class="mb-sm-5 mb-4 mt-sm-0 mt-4">About Company</h3>
                 <p>We have set off to transfer our tourism experience of 25 years to tourism transportation. Beyond transferring you from one point to another, we are your fellow traveler. </p>
-                <a href="about.html" class="read">Know More <i class="fas fa-caret-right"></i></a>
+                <a href="{{route('aboutus')}}" class="read">Know More <i class="fas fa-caret-right"></i></a>
             </div>
             <div class="col-lg-3 col-sm-6 mb-lg-0 mb-5 footer-grid-agileits-w3ls1 text-left">
                 <h3 class="mb-sm-5 mb-4">Locate Us</h3>
                 <ul class="w3ls-footer-bottom-list">
-                    <li> <span class="fas fa-map-marker"></span> 3481 Jack Street Beverly Jack Hills<span> 90210 Block, USA </span></li>
-                    <li> <span class="fas fa-envelope"></span> <a href="mailto:name@example.com"> mail@example.com</a> </li>
-                    <li> <span class="fas fa-phone"></span> +112 367 896 2449 </li>
-                    <li> <span class="fas fa-fax"></span> +112 367 896 2449 </li>
-                    <li> <span class="fas fa-globe"></span> <a href="index.html"> www.websitename.com</a> </li>
-                    <li> <span class="fas fa-clock"></span> Office Time  : 8:00 a.m - 6:00 p.m</li>
+                    <li> <span class="fas fa-map-marker"></span>{{$setting->address}}</li>
+                    <li> <span class="fas fa-envelope"></span> <a href="mailto:{{$setting->email}}"> {{$setting->email}}</a> </li>
+                    <li> <span class="fas fa-phone"></span> {{$setting->phone}} </li>
+                    <li> <span class="fas fa-fax"></span> {{$setting->fax}}</li>
+                    <li> <span class="fas fa-globe"></span> <a href="{{route('home')}}">  www.websitename.com</a> </li>
+                    <li> <span class="fas fa-clock"></span>  Office Time : 8:00 a.m - 6:00 p.m</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-sm-6 mb-sm-0 mb-5 footer-grid-agileits-w3ls text-left">
@@ -93,31 +96,34 @@
                     <div class="copyrighttop">
                         <h3 class="mb-sm-5 mb-4">Stay In Touch</h3>
                         <ul>
+                            @if($setting->facebook != null)
                             <li class="mr-1">
-                                <a class="facebook" href="https://www.facebook.com/">
+                                <a class="facebook" href="{{$setting->facebook}}" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
+                            @endif
+                            @if($setting->twitter != null)
                             <li class="mr-1">
-                                <a class="facebook" href="https://twitter.com/">
+                                <a class="facebook" href="{{$setting->twitter}}" target="_blank">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
+                            @endif
+                            @if($setting->instagram != null)
                             <li class="mr-1">
-                                <a class="facebook" href="https://mail.google.com/">
-                                    <i class="fab fa-google-plus-g"></i>
+                                <a class="facebook" href="{{$setting->instagram}}" target="_blank">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
+                            @endif
+                            @if($setting->youtube != null)
                             <li class="mr-1">
-                                <a class="facebook" href="https://tr.pinterest.com/">
-                                    <i class="fab fa-pinterest-p"></i>
+                                <a class="facebook" href="{{$setting->youtube}}" target="_blank"    >
+                                    <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a class="facebook" href="https://www.linkedin.com/">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
+                            @endif
                         </ul>
 
                     </div>
@@ -127,7 +133,7 @@
         <!-- copyright -->
         <div class="footer-cpy text-center pt-sm-5 mt-sm-5 mt-4 pt-3">
             <div class="w3layouts-agile-copyrightbottom">
-                <p>© 2021 Istanbul Transfer Service. All Rights Reserved </p>
+                <p>© 2021 {{$setting -> company}} | All Rights Reserved </p>
             </div>
         </div>
         <!-- //copyright -->

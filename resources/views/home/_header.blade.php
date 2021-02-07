@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-md-6 col-sm-6 logo">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{route('home')}}">
                 <i class="fas fa-taxi"></i> Istanbul Airport Transfer </a>
         </div>
 

@@ -1,5 +1,5 @@
 @php
-    $parentCategories = \App\Http\Controllers\Admin\HomeController::categoryList()
+    $parentCategories = \App\Http\Controllers\HomeController::categoryList()
 @endphp
 <!-- header -->
 <header>
@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link ml-lg-0" href="index.html">Home
+                    <a class="nav-link ml-lg-0" href="{{route('home')}}">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>

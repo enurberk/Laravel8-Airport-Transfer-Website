@@ -18,8 +18,11 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/', [HomeController::class,'home']);
-Route::get('/', [HomeController::class,'index']);
+//Route::get('/', [HomeController::class,'home']);
+Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/home', [HomeController::class,'index'])->name('homepage');
+Route::get('/aboutus', [HomeController::class,'aboutus'])->name('aboutus');
+
 
 //admin
 Route::middleware('auth')->prefix('admin')->group(function(){

@@ -160,7 +160,7 @@
                                 </div>    <div class="form-group">
                                     <div class="form-group col-md-6">
                                         <label>Youtube</label>
-                                        <input type="text" name="phone" youtube="{{$data->youtube}}" class="form-control">
+                                        <input type="text" name="youtube" value="{{$data->youtube}}" class="form-control">
                                     </div>
                                 </div>
 

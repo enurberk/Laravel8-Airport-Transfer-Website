@@ -1,9 +1,8 @@
 @extends('layouts.home')
 
-@section('title','Laravel Airport Transfer Site')
-@section('description',"Turkey's most reliable airport transfer e-commerce site.")
-@section('keywords','airport, transfer, flight, travel, Turkey, Istanbul')
-
+@section('title') {{ $setting -> title}} @endsection
+@section('description') {{ $setting -> description}} @endsection
+@section('keywords') {{ $setting -> keywords}} @endsection
 @section('content')
     <!-- about -->
     <section class="about py-5">
