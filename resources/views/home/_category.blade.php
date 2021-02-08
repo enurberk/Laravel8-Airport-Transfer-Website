@@ -17,10 +17,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="{{route('aboutus')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="booking.html">Booking</a>
+                    <a class="nav-link" href="{{route('booking')}}">Booking</a>
                 </li>
 
 
@@ -30,8 +30,8 @@
                         Our Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-center" href="services.html">Services</a>
-                        <a class="dropdown-item text-center" href="_vehicles.html">Vehicles</a>
+                        <a class="dropdown-item text-center" href="{{route('services')}}">Services</a>
+                        <a class="dropdown-item text-center dropdown-toggle" href="{{route('vehicles')}}">Vehicles</a>
                        @foreach($parentCategories as $rs)
                             <ul class="navbar-nav mx-auto">
                                 <li  style="color: black;font-family:'Arial Black'" class="nav-link dropdown-toggle">
@@ -49,13 +49,13 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="{{route('contact')}}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="_faq.html">FAQ</a>
+                    <a class="nav-link" href="{{route('faq')}}">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="_blog.html">Blog</a>
+                    <a class="nav-link" href="{{route('blog')}}">Blog</a>
                 </li>
             </ul>
 

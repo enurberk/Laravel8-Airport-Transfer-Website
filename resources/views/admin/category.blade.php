@@ -67,12 +67,13 @@
                     </div> <!-- end section -->
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
+
     </div> <!-- .container-fluid -->
 
 
 
 
-        <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">

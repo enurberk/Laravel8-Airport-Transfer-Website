@@ -25,9 +25,39 @@ class HomeController extends Controller
         return view('home.index', ['setting' => $setting]);
     }
 
-    public function home()
+    public function aboutus()
     {
-    return view('layouts.home');
+    return view('home.aboutus');
+    }
+
+    public function booking()
+    {
+        return view('home.booking');
+    }
+
+    public function services()
+    {
+        return view('home.services');
+    }
+
+    public function vehicles()
+    {
+        return view('home.vehicles');
+    }
+
+    public function contact()
+    {
+        return view('home.contact');
+    }
+
+    public function faq()
+    {
+        return view('home.faq');
+    }
+
+    public function blog()
+    {
+        return view('home.blog');
     }
 
     public function login(){

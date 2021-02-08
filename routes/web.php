@@ -20,8 +20,15 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/', [HomeController::class,'home']);
 Route::get('/', [HomeController::class,'index'])->name('home');
-Route::get('/home', [HomeController::class,'index'])->name('homepage');
+
+Route::get('/home', [HomeController::class,'home'])->name('homepage');
 Route::get('/aboutus', [HomeController::class,'aboutus'])->name('aboutus');
+Route::get('/booking', [HomeController::class,'booking'])->name('booking');
+Route::get('/services', [HomeController::class,'services'])->name('services');
+Route::get('/vehicles', [HomeController::class,'vehicles'])->name('vehicles');
+Route::get('/contact', [HomeController::class,'contact'])->name('contact');
+Route::get('/faq', [HomeController::class,'faq'])->name('faq');
+Route::get('blog', [HomeController::class,'blog'])->name('blog');
 
 
 //admin
