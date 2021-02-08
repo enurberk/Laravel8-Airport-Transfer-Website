@@ -20,6 +20,9 @@
                     <a class="nav-link" href="{{route('aboutus')}}">About</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('references')}}">References</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('booking')}}">Booking</a>
                 </li>
 

@@ -4,14 +4,6 @@
 
 @section('content')
 
-<div id="breadcrumb">
-    <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="{{ route('home') }}"> Home </a></li>
-            <li><a href="#"> Blank </a></li>
-        </ul>
-    </div>
-</div>
     <section class="services py-5">
         <!--
         <div class="container py-lg-5">
