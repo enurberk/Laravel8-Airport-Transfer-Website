@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806d401c-5171-4655-98f9-36c4b3660385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +216,7 @@
       <workItem from="1611733219851" duration="23765000" />
       <workItem from="1611823167201" duration="10368000" />
       <workItem from="1612620712530" duration="16604000" />
-      <workItem from="1612759895408" duration="20459000" />
+      <workItem from="1612759895408" duration="23243000" />
     </task>
     <task id="LOCAL-00001" summary="download jetstream files">
       <created>1607282490387</created>
