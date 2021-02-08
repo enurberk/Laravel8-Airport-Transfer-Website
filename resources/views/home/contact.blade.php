@@ -26,12 +26,15 @@
                         <h3>Send us a message</h3>
                     </div>
                     <div class="agileinfo-contact-form-grid">
-                        <form action="#" method="post">
-                            <input type="text" name="Name" placeholder="Name" required="">
-                            <input type="text" name="Subject" placeholder="Subject" required="">
-                            <input type="email" name="Email" placeholder="Email" required="">
-                            <textarea name="Message" placeholder="Message" required=""></textarea>
-                            <button class="btn1">Submit</button>
+                        @include('home.message')
+                        <form action="{{route('sendmessage')}}" method="post">
+                            @csrf
+                            <input type="text" name="name" placeholder="Name & Surname" required="">
+                            <input type="text" name="phone" placeholder="Phone Number" required="">
+                            <input type="text" name="email" placeholder="Email" required="">
+                            <input type="text" name="subject" placeholder="Subject" required="">
+                            <textarea name="message" placeholder="Your Message" required=""></textarea>
+                            <button type="submit" class="btn1">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -39,7 +42,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contact-form-top">
-                        <h3>Contact Informations</h3>
+                        <h3>Contact Us</h3>
                     </div>
                     {!!$setting->contact!!}
                 </div>

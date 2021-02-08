@@ -30,7 +30,8 @@ Route::get('/services', [HomeController::class,'services'])->name('services');
 Route::get('/vehicles', [HomeController::class,'vehicles'])->name('vehicles');
 Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
-Route::get('blog', [HomeController::class,'blog'])->name('blog');
+Route::get('/blog', [HomeController::class,'blog'])->name('blog');
+Route::post('/sendmessage', [HomeController::class,'sendmessage'])->name('sendmessage');
 
 
 //admin
@@ -55,6 +56,15 @@ Route::middleware('auth')->prefix('admin')->group(function(){
         Route::post('update/{id}',[App\Http\Controllers\Admin\TransferController::class,'update'])->name('admin_transfer_update');
         Route::get('delete/{id}',[App\Http\Controllers\Admin\TransferController::class,'destroy'])->name('admin_transfer_delete');
         Route::get('show',[App\Http\Controllers\Admin\TransferController::class,'show'])->name('admin_transfer_show');
+    });
+
+    #message
+    Route::prefix('messages')->group(function(){
+        Route::get('/',[\App\Http\Controllers\Admin\MessageController::class,'index'])->name('admin_message');
+        Route::get('edit/{id}',[App\Http\Controllers\Admin\MessageController::class,'edit'])->name('admin_message_edit');
+        Route::post('update/{id}',[App\Http\Controllers\Admin\MessageController::class,'update'])->name('admin_message_update');
+        Route::get('delete/{id}',[App\Http\Controllers\Admin\MessageController::class,'destroy'])->name('admin_message_delete');
+        Route::get('show',[App\Http\Controllers\Admin\MessageController::class,'show'])->name('admin_message_show');
     });
 
     #Transfer Image Gallery

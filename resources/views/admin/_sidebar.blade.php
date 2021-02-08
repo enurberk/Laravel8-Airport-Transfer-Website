@@ -66,5 +66,16 @@
             </li>
         </ul>
 
+        <!--Contact Message-->
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+                <a href="{{route('admin_message')}}" class="nav-link">
+                    <i class="fe fe-16 fe-message-square"></i>
+                    <span class="ml-3 item-text"></span>
+                    Contact Message
+                </a>
+            </li>
+        </ul>
+
     </nav>
 </aside>
