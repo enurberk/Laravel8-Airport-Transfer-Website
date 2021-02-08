@@ -1,8 +1,8 @@
 
 
 <div class="sidebar-left">
-    <h3 class="sidebar-left title"> </h3>
     <ul class="list-group-item">
+        <h3 class="align-items-center"><strong style="color: black;">User Panel</strong></h3><hr>
         <li><a href="{{ route('myprofile') }}">My Profile</a></li>
         <li><a href="">My Rezervations</a></li>
         <li><a href="">My Reviews</a></li>

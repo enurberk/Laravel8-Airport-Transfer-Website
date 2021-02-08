@@ -15,7 +15,7 @@
             <div class="col-md-3 top-forms mt-md-3 mt-2 mb-md-0 mb-3">
 				<span>
 					<a href="{{ route('myprofile') }}">{{ Auth::user()->name }}</a>
-                    <a href="{{route('admin_logout')}}">Logout</a>
+                    <a href="{{route('logout')}}">Logout</a>
 				</span>
             </div>
             @endauth
