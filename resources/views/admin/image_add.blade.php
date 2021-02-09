@@ -63,7 +63,7 @@
                                         <th>Image</th>
                                         <th>Delete</th>
                                     </tr>
-                                    </thead>
+                                </thead>
                                 <tbody>
                                     @foreach($images as $rs)
                                     <tr>
@@ -74,11 +74,14 @@
                                                 <img src="{{Storage::url($rs -> image)}}" height="60" alt="">
                                             @endif
                                         </td>
-                                        <td><a href="{{route('admin_image_delete', ['id' => $rs->id, 'transfer_id'=>$data->id])}}" onclick="return confirm('Record will be delete! Are you sure?')">
+                                        <td>
+                                        <a href="{{route('admin_image_delete', ['id' => $rs->id, 'transfer_id'=>$data->id])}}" onclick="return confirm('Record will be delete! Are you sure?')">
                                         <div class="p-3">
                                             <span class="fe fe-24 fe-delete"></span>
-                                        </div><span class="small text-muted"></span>
-                                        </a></td>
+                                        </div>
+                                            <span class="small text-muted"></span>
+                                        </a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
@@ -87,12 +90,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
-
 </main> <!-- main -->
 </div> <!-- .wrapper -->
 

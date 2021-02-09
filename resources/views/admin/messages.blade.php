@@ -32,7 +32,7 @@
                                                <th>Subject</th>
                                                <th>Message</th>
                                                <th>Admin Note</th>
-                                               <th>New</th>
+                                               <th>Status</th>
                                                <th>Edit</th>
                                                <th>Delete</th>
                                            </tr>
@@ -47,18 +47,12 @@
                                             <td>{{$rs -> subject}}</td>
                                             <td>{{$rs -> message}}</td>
                                             <td>{{$rs -> note}}</td>
-                                            <td><a href="{{route('admin_message_edit', ['id' => $rs->id])}}">
+                                            <td>{{$rs -> status}}</td>
+                                            <td><a href="{{route('admin_message_edit', ['id' => $rs->id])}}"
+                                                   onclick="return !window.open(this.href, '', 'top=50 left=100 width=800, height=600')">
                                                     <div class="p-3">
                                                         <span class="fe fe-24 fe-file-plus"></span>
                                                     </div><span class="small text-muted"></span>
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="{{route('admin_message_update', ['id' => $rs->id])}}"
-                                                   onclick="return !window.open(this.href, '', 'top=50 left=100 width=800, height=600')">
-                                                <div class="p-3">
-                                                    <span class="fe fe-24 fe-edit"></span>
-                                                </div><span class="small text-muted"></span>
                                                 </a>
                                             </td>
                                             <td><a href="{{route('admin_message_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">

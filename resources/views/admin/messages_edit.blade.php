@@ -19,17 +19,15 @@
     <link rel="stylesheet" href="{{asset('assets')}}/admin/css/app-dark.css" id="darkTheme">
 </head>
 
-
 <body>
 <div class="wrapper">
     <main role="main" class="main-content">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12">
-
                     <div class="card shadow mb-6">
                         <div class="card-header">
-                            <strong class="card-title">Contact Message Details</strong>
+                            <strong class="card-title">Message Detail</strong>
                             @include('home.message')
                         </div>
                     </div>
@@ -63,27 +61,12 @@
                                         <tr>
                                             <th>Admin Note</th>
                                             <td>
-                                                <textarea id="note" name="detail">{{$data -> note}}</textarea>
-                                                <script>
-                                                    $('#note').summernote({
-                                                        placeholder: 'Hello stand alone ui',
-                                                        tabsize: 2,
-                                                        height: 120,
-                                                        toolbar: [
-                                                            ['style', ['style']],
-                                                            ['font', ['bold', 'underline', 'clear']],
-                                                            ['color', ['color']],
-                                                            ['para', ['ul', 'ol', 'paragraph']],
-                                                            ['table', ['table']],
-                                                            ['insert', ['link', 'picture', 'video']],
-                                                            ['view', ['fullscreen', 'codeview', 'help']]
-                                                        ]
-                                                    });
-                                                </script></td>
+                                                <textarea id="detail" name="note">{{$data -> note}}</textarea>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <button type="submit" class="btn btn-primary">Upload Contact Message</button>
+                                                <button type="submit" class="btn btn-primary">Upload Message</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -92,13 +75,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div> <!-- .col-12 -->
-        </div> <!-- .row -->
-</div> <!-- .container-fluid -->
-
-</main> <!-- main -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- .container-fluid -->
+    </main> <!-- main -->
 </div> <!-- .wrapper -->
 
 </body>
