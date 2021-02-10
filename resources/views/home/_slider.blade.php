@@ -4,11 +4,13 @@
     <!-- Slideshow 1 -->
     <div class="rslides_container">
         <ul class="rslides" id="slider1">
+            @foreach($slider as $rs)
             <li>
-                <div class="banner-img">
+                <img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" style="height: 650px">
                     <div class="bs-slider-overlay">
                         <div class="banner-info text-center">
                             <span class="fas fa-taxi"></span>
+<<<<<<< HEAD
                             <h1>24/7 Airport Transfer Service </h1>
                             <h2 class="mb-5"><i class="fas fa-phone"></i> 12(00) 123 1234</h2>
                             <a href="{{route('booking')}}">Book Now </a>
@@ -52,7 +54,16 @@
                     </div>
                 </div>
             </li>
+=======
+                            <h1>{{ $rs->title }}</h1>
+                            <h2 class="mb-5"><i class="fas fa-money-bill-alt"></i> {{$rs->base_price}} TL</h2>
+                            <a href="{{route('transfer', ['id'=>$rs->id, 'slug'=>$rs->slug])}}">Book Now </a>
+                        </div>
+                    </div>
+>>>>>>> c9f2bd1f86bd9d04cb975e536bad5c8addf511cf
 
+            </li>
+            @endforeach
         </ul>
         </div>
     </div>

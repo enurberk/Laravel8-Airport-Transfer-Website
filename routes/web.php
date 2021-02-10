@@ -32,6 +32,7 @@ Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::get('/blog', [HomeController::class,'blog'])->name('blog');
 Route::post('/sendmessage', [HomeController::class,'sendmessage'])->name('sendmessage');
+Route::get('/transfer/{id}/{slug}', [HomeController::class,'transfer'])->name('transfer');
 
 
 //admin
