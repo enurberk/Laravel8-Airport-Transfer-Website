@@ -55,6 +55,13 @@ class HomeController extends Controller
         exit();
     }
 
+    public function categorytransfers($id, $slug)
+    {
+        $datalist = Transfer::where('category_id', $id)->get();
+        $data = Category::find($id);
+        return view('home.category_transfers',['data' => $data, 'datalist' => $datalist]);
+    }
+
     public function aboutus()
     {
         $setting = Setting::first();
@@ -149,4 +156,10 @@ class HomeController extends Controller
             return view('admin.login');
         }
     }
+//    public function elif()
+//    {
+//        $transfer = Transfer::first();
+//        $toplam = $transfer->base_price * $transfer->km_price;
+//        return $toplam;
+//    }
 }

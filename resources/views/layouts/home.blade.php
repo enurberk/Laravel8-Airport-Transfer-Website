@@ -42,7 +42,7 @@
 
 <div class="banner" id="home">
     @include('home._category')
-    @include('home._slider')
+    <x-slider-component/>
 </div>
 
 @section('content')

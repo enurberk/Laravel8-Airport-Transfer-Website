@@ -29,8 +29,8 @@ input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
 	-ms-transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;	
-}	
+	margin:0;
+}
 p{
 	margin:0;
 }
@@ -571,7 +571,7 @@ label{
 .banner-img.one,
 .banner-img.two,
 .banner-img.three {
-	background: url(../images/banner1.jpg) no-repeat 0px 0px;
+	/*background: url(../images/banner1.jpg) no-repeat 0px 0px;*/
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -899,7 +899,7 @@ a.facebook:hover {
 .copyrighttop li {
 	list-style: none;
 	display: inline-block;
-	
+
 }
 
 .w3layouts-agile-copyrightbottom p a {
@@ -997,7 +997,7 @@ i.fa.fa-smile {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.about-head a { 
+.about-head a {
     background: #333;
     color: #fff;
     padding: 15px 30px;
@@ -1783,7 +1783,7 @@ ul.radio-w3ls li {
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999; 
+	z-index: 999;
 	width: 40px;
 	height: 40px;
 	border: none;

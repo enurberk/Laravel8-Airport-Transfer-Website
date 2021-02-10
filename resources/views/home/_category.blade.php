@@ -37,13 +37,8 @@
                         <a class="dropdown-item text-center dropdown-toggle" href="{{route('vehicles')}}">Vehicles</a>
                        @foreach($parentCategories as $rs)
                             <ul class="navbar-nav mx-auto">
-                                <li  style="color: black;font-family:'Arial Black'" class="nav-link dropdown-toggle">
-                                    {{$rs->title}}
-                                    <ul>
-                                        @if(count($rs->children))
-                                            @include('home.categorytree', ['children' => $rs->children])
-                                        @endif
-                                    </ul>
+                                <li  style="color: black;font-family:'Arial Black'" class="nav-link">
+                                    <a href="{{route('categorytransfers', ['id'=>$rs->id, 'slug'=>$rs->title])}}">{{$rs->title}}</a>
                                 </li>
                             </ul>
                       @endforeach

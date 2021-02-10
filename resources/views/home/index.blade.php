@@ -4,6 +4,7 @@
 @section('description') {{ $setting -> description}} @endsection
 @section('keywords') {{ $setting -> keywords}} @endsection
 @section('content')
+
     <!-- about -->
     <section class="about py-5">
         <div class="container py-lg-5 py-3">

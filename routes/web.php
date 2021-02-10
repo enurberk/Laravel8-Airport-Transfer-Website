@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', [HomeController::class,'home']);
 Route::get('/', [HomeController::class,'index'])->name('home');
 
-Route::get('/home', [HomeController::class,'home'])->name('homepage');
+//Route::get('/home', [HomeController::class,'home'])->name('homepage');
 Route::get('/aboutus', [HomeController::class,'aboutus'])->name('aboutus');
 Route::get('/references', [HomeController::class,'references'])->name('references');
 Route::get('/booking', [HomeController::class,'booking'])->name('booking');
@@ -37,6 +37,7 @@ Route::get('/blog/3', [HomeController::class,'blog3'])->name('blog3');
 Route::post('/sendmessage', [HomeController::class,'sendmessage'])->name('sendmessage');
 Route::get('/blogcontent', [HomeController::class,'blogcontent'])->name('blogcontent');
 Route::get('/transfer/{id}/{slug}', [HomeController::class,'transfer'])->name('transfer');
+Route::get('/categorytransfers/{id}/{slug}', [HomeController::class,'categorytransfers'])->name('categorytransfers');
 
 
 //admin
