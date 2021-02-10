@@ -39,7 +39,7 @@
                 <div class="row about-grids-bottom text-left">
                     <div class="col-md-4 mb-md-0 mb-5 about-bottom-grid">
                         <h4 class="mb-4">We have been offering comfortable and safe journeys since our foundation day…</h4>
-                        <a href="about.html"> More About Us</a>
+                        <a href="{{route('aboutus')}}"> More About Us</a>
                     </div>
                     <div class="col-md-4 about-bottom-grid">
                         <p>We have set off to transfer our tourism experience of 25 years to tourism transportation.

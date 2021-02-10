@@ -40,17 +40,20 @@ class HomeController extends Controller
 
     public function booking()
     {
-        return view('home.booking');
+        $setting = Setting::first();
+        return view('home.booking',['setting' => $setting]);
     }
 
     public function services()
     {
-        return view('home.services');
+        $setting = Setting::first();
+        return view('home.services',['setting' => $setting]);
     }
 
     public function vehicles()
     {
-        return view('home.vehicles');
+        $setting = Setting::first();
+        return view('home.vehicles',['setting' => $setting]);
     }
 
     public function contact()
@@ -72,13 +75,13 @@ class HomeController extends Controller
     }
 
     public function faq()
-    {
-        return view('home.faq');
+    { $setting = Setting::first();
+        return view('home.faq',['setting' => $setting]);
     }
 
     public function blog()
-    {
-        return view('home.blog');
+    { $setting = Setting::first();
+        return view('home.blog',['setting' => $setting]);
     }
 
     public function login(){

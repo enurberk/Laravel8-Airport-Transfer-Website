@@ -26,14 +26,14 @@
                     <h3 class="mb-sm-5 mb-4">Latest Posts</h3>
                     <div class="blog-grids row mb-3">
                         <div class="col-4 pr-0 blog-grid-left">
-                            <a href="_blog.html">
+                            <a href="{{route('blog')}}">
                                 <img src="{{asset('assets')}}/images/blog1.jpg" class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-8 blog-grid-right">
 
                             <h5>
-                                <a href="_blog.html">If your plane to Istanbul lands to Sabiha Gökçen Airport </a>
+                                <a href="{{route('blog')}}">If your plane to Istanbul lands to Sabiha Gökçen Airport </a>
                             </h5>
                             <div class="sub-meta">
 								<span>
@@ -44,14 +44,14 @@
                     </div>
                     <div class="blog-grids row mb-3">
                         <div class="col-4 pr-0 blog-grid-left">
-                            <a href="_blog.html">
+                            <a href="{{route('blog')}}">
                                 <img src="{{asset('assets')}}/images/blog2.jpg" class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-8 blog-grid-right">
 
                             <h5>
-                                <a href="_blog.html">You may already heard of some news about taxis requiring </a>
+                                <a href="{{route('blog')}}">You may already heard of some news about taxis requiring </a>
                             </h5>
                             <div class="sub-meta">
 								<span>
@@ -62,14 +62,14 @@
                     </div>
                     <div class="blog-grids row">
                         <div class="col-4 pr-0 blog-grid-left">
-                            <a href="_blog.html">
+                            <a href="{{route('blog')}}">
                                 <img src="{{asset('assets')}}/images/blog3.jpg" class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-8 blog-grid-right">
 
                             <h5>
-                                <a href="_blog.html">For many years, Istanbul had two airports, one is Atatürk Airport </a>
+                                <a href="{{route('blog')}}">For many years, Istanbul had two airports, one is Atatürk Airport </a>
                             </h5>
                             <div class="sub-meta">
 								<span>

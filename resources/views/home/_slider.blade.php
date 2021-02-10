@@ -11,7 +11,7 @@
                             <span class="fas fa-taxi"></span>
                             <h1>24/7 Airport Transfer Service </h1>
                             <h2 class="mb-5"><i class="fas fa-phone"></i> 12(00) 123 1234</h2>
-                            <a href="booking.html">Book Now </a>
+                            <a href="{{route('booking')}}">Book Now </a>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                             <span class="fas fa-taxi"></span>
                             <h4>Online Transfer Booking</h4>
                             <h5 class="mb-5">No Extra Charges</h5>
-                            <a href="booking.html">Book Now </a>
+                            <a href="{{route('booking')}}">Book Now </a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                             <span class="fas fa-taxi"></span>
                             <h4>Reach Your Destination</h4>
                             <h5 class="mb-5">Within Exact Time </h5>
-                            <a href="booking.html">Book Now </a>
+                            <a href="{{route('booking')}}">Book Now </a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <span class="fas fa-taxi"></span>
                             <h4>Travel Safe & Secure</h4>
                             <h5 class="mb-5">Assured Transfer Service</h5>
-                            <a href="booking.html">Book Now </a>
+                            <a href="{{route('booking')}}">Book Now </a>
                         </div>
                     </div>
                 </div>

@@ -47,7 +47,7 @@
 
     <!-- müşteri yorumları için buraya bir alan eklenmeli!! db den çekilecek buraya tablo şeklinde koyulabilir! -->
 
-    <!-- Comment -->
+    <!-- Comment
     <section class="contact py-5">
         <div class="container py-lg-5">
             <div class="row agile-contact-form">
@@ -68,7 +68,7 @@
             </div>
         </div>
     </section>
-    <!-- //Comment -->
+    //Comment -->
 
 
     <!-- counter -->
