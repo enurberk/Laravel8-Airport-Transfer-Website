@@ -25,10 +25,8 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::first();
-        $slider = Transfer::select('id','title', 'image', 'base_price', 'slug')->limit(4)->get();
-        $data = [
+         $data = [
             'setting' => $setting,
-            'slider' => $slider,
             'page'=>'home'
         ];
         return view('home.index', $data);
