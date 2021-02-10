@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use App\Models\Transfer;
@@ -51,8 +52,10 @@ class HomeController extends Controller
     public function transfer($id, $slug)
     {
         $data = Transfer::find($id);
-        print_r($data);
-        exit();
+        $datalist = Image::where('transfer_id', $id)->get();
+        #print_r($data);
+        #exit();
+        return view('home.transfer_detail', ['data' => $data, "datalist"=>$datalist]);
     }
 
     public function categorytransfers($id, $slug)
@@ -118,8 +121,6 @@ class HomeController extends Controller
     { $setting = Setting::first();
         return view('home.blog',['setting' => $setting]);
     }
-
-
 
     public function login(){
         return view('admin.login');

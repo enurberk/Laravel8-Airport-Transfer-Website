@@ -12,15 +12,14 @@
             <!-- Car Info-->
             <div class="col-md-6 col-sm-6 text-center">
                 <div class="thumbnail">
-                   <a> <img src="{{ \Illuminate\Support\Facades\Storage::url($rs->image) }}" alt="Image" style="max-width:100%;">
+                    <a> <img src="{{Storage::url($rs->image) }}" alt="Image" style="max-width:100%;"></a>
                 </div>
                 <h5 class="my-2 text-center text-uppercase">{{$rs->title}}</h5>
                 <h5 class="heading mb-3 text-center">{{$rs->description}}</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('transfer', ['id'=>$rs->id, 'slug'=>$rs->slug])}}">See Detail </a>
             </div>
             @endforeach
     </div>
-
     <!-- Car-->
 
 @endsection
