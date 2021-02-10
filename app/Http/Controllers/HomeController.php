@@ -32,6 +32,22 @@ class HomeController extends Controller
         return view('home.index', $data);
     }
 
+    public function blog1()
+    {
+        $setting = Setting::first();
+        return view('home.blog1',['setting' => $setting]);
+    }
+    public function blog2()
+    {
+        $setting = Setting::first();
+        return view('home.blog2',['setting' => $setting]);
+    }
+    public function blog3()
+    {
+        $setting = Setting::first();
+        return view('home.blog3',['setting' => $setting]);
+    }
+
     public function transfer($id, $slug)
     {
         $data = Transfer::find($id);
@@ -95,6 +111,8 @@ class HomeController extends Controller
     { $setting = Setting::first();
         return view('home.blog',['setting' => $setting]);
     }
+
+
 
     public function login(){
         return view('admin.login');

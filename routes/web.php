@@ -31,7 +31,11 @@ Route::get('/vehicles', [HomeController::class,'vehicles'])->name('vehicles');
 Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::get('/blog', [HomeController::class,'blog'])->name('blog');
+Route::get('/blog/1', [HomeController::class,'blog1'])->name('blog1');
+Route::get('/blog/2', [HomeController::class,'blog2'])->name('blog2');
+Route::get('/blog/3', [HomeController::class,'blog3'])->name('blog3');
 Route::post('/sendmessage', [HomeController::class,'sendmessage'])->name('sendmessage');
+Route::get('/blogcontent', [HomeController::class,'blogcontent'])->name('blogcontent');
 Route::get('/transfer/{id}/{slug}', [HomeController::class,'transfer'])->name('transfer');
 
 
