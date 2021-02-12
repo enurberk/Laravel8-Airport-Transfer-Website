@@ -21,7 +21,9 @@
             @auth
                 <!--User name and Logout links-->
                     <a href="#" data-toggle="collapse" aria-expanded="false" class="nav-link">
-                        <i class="fe fe-user fe-16"></i>
+                        @if(Auth::user() -> profile_photo_path)
+                            <img src="{{Storage::url(Auth::user() -> profile_photo_path)}}" height="50" style="border-radius: 30px" alt="">
+                        @endif
                         <span class="ml-3 item-text">{{Auth::user()->name}}</span>
                     </a>
                         <a href="{{route('logout')}}" aria-expanded="false" class="nav-link">
@@ -93,6 +95,17 @@
         </li>
         </ul>
 
+
+        <!--Role-->
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+                <a href="{{route('admin_users')}}" class="nav-link">
+                    <i class="fe fe-16 fe-user"></i>
+                    <span class="ml-3 item-text"></span>
+                    User Roles
+                </a>
+            </li>
+        </ul>
 
     </nav>
 </aside>
