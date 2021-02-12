@@ -21,7 +21,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Mercedes Sprinter </h5>
                 <h5 class="heading mb-3 text-center">Mercedes Sprinter 1 - 8 Persons / 1 - 8 Baggage</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
             <!--2. Car Info-->
             <div class="col-md-6 col-sm-6 text-center">
@@ -30,7 +30,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Mercedes Vito </h5>
                 <h5 class="heading mb-3 text-center">Mercedes Vito 1 - 4 Persons / 1 - 4 Baggage</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
         </div>
 
@@ -42,7 +42,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Midibus </h5>
                 <h5 class="heading mb-3 text-center">Midibus 1 - 24 Persons / 1 - 24 Baggage</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
             <!--4. Car Info-->
             <div class="col-md-6 col-sm-6 text-center">
@@ -51,7 +51,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Limousine </h5>
                 <h5 class="heading mb-3 text-center">The details and class of our limousine vehicles will be informed upon your request.</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Bus </h5>
                 <h5 class="heading mb-3 text-center">Private Bus 1 - 46 Persons / 1 - 52 Baggage</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
             <!--6. Car Info-->
             <div class="col-md-6 col-sm-6 text-center">
@@ -72,7 +72,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Mercedes C200 4Matic </h5>
                 <h5 class="heading mb-3 text-center">Mercedes C200 1 - 3 Persons / 1 - 3 Baggage</h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">Chevrolet Trax </h5>
                 <h5 class="heading mb-3 text-center">Chevrolet Trax 1 - 4 Persons / 1 - 4 Baggage</h5>
-                <a href="{{route('vehicles')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
         </div>
 

@@ -189,7 +189,7 @@
         <div class="booking text-center p-sm-5 py-5 px-3">
             <h3>Book your vehicle Now</h3>
             <p class="my-4">Reach Your Destination </p>
-            <a href="{{route('booking')}}">Book Now</a>
+            <a href="{{route('user_rezervation_add')}}">Book Now</a>
         </div>
     </section>
     <!-- booking -->

@@ -2,7 +2,7 @@
 
 @section('title', 'Booking Form')
 @section('content')
-
+    @auth <!--user değilse booking formu açamaz! -->
     <!-- Booking-->
     <section class="bookingform py-5">
         <div class="container py-md-5 py-3">
@@ -68,5 +68,5 @@
         </div>
     </section>
     <!--//Booking -->
-
+    @endauth
 @endsection

@@ -42,6 +42,10 @@ Route::get('/categorytransfers/{id}/{slug}', [HomeController::class,'categorytra
 
 //admin
 Route::middleware('auth')->prefix('admin')->group(function(){
+
+    //admin role
+    Route::middleware('admin')->group(function(){
+
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index']) ->name('admin_home');
 
     #category
@@ -96,8 +100,8 @@ Route::middleware('auth')->prefix('admin')->group(function(){
         Route::get('delete/{id}',[\App\Http\Controllers\Admin\RezervationController::class,'destroy'])->name('admin_rezervation_delete');
         Route::get('show/{id}',[\App\Http\Controllers\Admin\RezervationController::class,'show'])->name('admin_rezervation_show');
     });
-
-});
+    }); //role
+}); //admin
 
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function(){
     Route::get('/', [\App\Http\Controllers\UserController::class, 'index']) ->name('myprofile');

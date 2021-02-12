@@ -34,6 +34,7 @@
               </g>
             </svg>
             </a>
+            @include('home.message')
             <h1 class="h6 mb-3">Sign in</h1>
             <div class="form-group">
                 <label for="inputEmail" class="sr-only">Email address</label>

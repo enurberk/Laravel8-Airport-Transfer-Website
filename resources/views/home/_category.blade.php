@@ -23,7 +23,7 @@
                     <a class="nav-link" href="{{route('references')}}">References</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('booking')}}">Booking</a>
+                    <a class="nav-link" href="{{route('user_rezervation_add')}}">Booking</a>
                 </li>
 
 
