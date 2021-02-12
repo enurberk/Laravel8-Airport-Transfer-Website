@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','Category List')
+@section('title','Admin Reservation List')
 
 @section('content')
 
@@ -8,68 +8,63 @@
     <main role="main" class="main-content">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12-center">
-                <h1 class="page-title">Categories</h1>
-            </div>
-        </div>
-        <h2 class="mb-2 page-title">Category List</h2>
-        <div class="row justify-content">
-                   <div class="row my-xl-4">
-                        <!-- Small table -->
-                        <div class="col-md-12">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <!-- table -->
-                                    <table class="table datatables" id="dataTable-1">
-
-                                        <div class="float-right">
-                                            <a href="{{route('admin_category_add')}}">
-                                            <button class="btn btn-primary float-right ml-3" type="button">Add more +</button>
-                                            </a>
-                                        </div>
-
-                                           <thead>
-                                           <tr>
-                                               <th>Id</th>
-                                               <th>Parent</th>
-                                               <th>Title</th>
-                                               <th>Status</th>
-                                               <th>Edit</th>
-                                               <th>Delete</th>
-                                           </tr>
-                                           </thead>
-                                        <tbody>
-                                        @foreach($datalist as $rs)
-                                        <tr>
-                                            <td>{{$rs -> id}}</td>
-                                            <td>
-                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }}
-                                            </td>
-                                            <td>{{$rs -> title}}</td>
-                                            <td>{{$rs -> status}}</td>
-                                            <td><a href="{{route('admin_category_edit', ['id' => $rs->id])}}">
-                                                    <div class="p-3">
-                                                        <span class="fe fe-24 fe-edit"></span>
-                                                    </div><span class="small text-muted"></span>
-                                                </a></td>
-                                            <td><a href="{{route('admin_category_delete', ['id' => $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">
-                                                    <div class="p-3">
-                                                        <span class="fe fe-24 fe-delete"></span>
-                                                    </div><span class="small text-muted"></span>
-                                                </a></td>
-                                        </tr>
-                                        @endforeach
-                                        </tbody>
-                                        </table>
-                                </div>
-
-                        </div> <!-- simple table -->
-                    </div> <!-- end section -->
+            <div class="col-12">
+                <h1 class="page-title">Reservation List</h1>
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
 
 
+        <!-- Small table -->
+        <div class="col-md-12">
+            <div class="card shadow">
+                <div class="card-body">
+                    <!-- table -->
+                    <table class="table datatables" id="dataTable-">
+                        <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Transfer Id</th>
+                            <th>Vehicle</th>
+                            <th>Pick Up Location</th>
+                            <th>Drop Off Location</th>
+                            <th>Price</th>
+                            <th>Pick Up Date</th>
+                            <th>Pick Up Time</th>
+                            <th>Status</th>
+                            <th>Note</th>
+                            <th>Edit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($datalist as $rs)
+                            <tr>
+                                <td>{{$rs -> user -> name}}</td>
+                                <td>{{$rs -> transfer_id}}</td>
+                                <td>{{$rs -> transfer -> title}}</td>
+                                <td>{{$rs -> pick_up_location}}</td>
+                                <td>{{$rs -> drop_off_location}}</td>
+                                <td>{{$rs -> price}}</td>
+                                <td>{{$rs -> pick_up_date}}</td>
+                                <td>{{$rs -> pick_up_time}}</td>
+                                <td>{{$rs -> status}}</td>
+                                <td>{{$rs -> note}}</td>
+                                <td>
+                                    <a href="{{route('admin_rezervation_show', ['id'=>$rs->id])}}"
+                                       onclick="return !window.open(this.href, '', 'top=50 left=100 width=1100, height=700')">
+                                        <div class="p-3">
+                                            <span class="fe fe-24 fe-edit"></span>
+                                        </div>
+                                        <span class="small text-muted"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div> <!-- simple table -->
+        </div>
 
 
     <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
@@ -197,18 +192,4 @@
     </div>
 </main> <!-- main -->
 </div> <!-- .wrapper -->
-@endsection
-@section('footer')
-    <script src='{{asset('assets')}}/admin/js/jquery.dataTables.min.js'></script>
-    <script src='{{asset('assets')}}/admin/js/dataTables.bootstrap4.min.js'></script>
-    <script>
-        $('#dataTable-1').DataTable(
-            {
-                autoWidth: true,
-                "lengthMenu": [
-                    [16, 32, 64, -1],
-                    [16, 32, 64, "All"]
-                ]
-            });
-    </script>
 @endsection

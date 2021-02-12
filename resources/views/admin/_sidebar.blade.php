@@ -77,5 +77,22 @@
             </li>
         </ul>
 
+        <!--Reservations-->
+        <ul class="navbar-nav flex-fill w-100 mb-2">
+        <li class="nav-item dropdown">
+            <a href="#fileman" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-folder fe-16"></i>
+                <span class="ml-3 item-text">Reservations</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="fileman">
+                <a class="nav-link pl-3" href="{{route('admin_rezervation')}}"><span class="ml-1">All Reservations</span></a>
+                <a class="nav-link pl-3" href="{{route('admin_rezervation_list',['status' => 'rejected'])}}"><span class="ml-1">Rejection Reservations</span></a>
+                <a class="nav-link pl-3" href="{{route('admin_rezervation_list',['status' => 'accepted'])}}"><span class="ml-1">Accepted Reservations</span></a>
+                <a class="nav-link pl-3" href="{{route('admin_rezervation_list',['status' => 'pending'])}}"><span class="ml-1">Pending Reservations</span></a>
+            </ul>
+        </li>
+        </ul>
+
+
     </nav>
 </aside>

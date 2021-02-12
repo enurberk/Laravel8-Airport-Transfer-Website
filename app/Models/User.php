@@ -58,4 +58,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    #One to Many
+    public function rezervation()
+    {
+        return $this->hasMany(Rezervation::class);
+    }
 }

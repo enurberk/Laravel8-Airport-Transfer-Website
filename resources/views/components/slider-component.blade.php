@@ -9,7 +9,7 @@
                             <span class="fas fa-taxi"></span>
                             <h1>{{ $rs->title }}</h1>
                             <h2 class="mb-5"><i class="fas fa-money-bill-alt"></i> {{$rs->base_price}} TL</h2>
-                            <a href="{{route('transfer', ['id'=>$rs->id, 'slug'=>$rs->slug])}}">Book Now </a>
+                            <a href="{{route('transfer', ['id'=>$rs->id, 'slug'=>$rs->slug])}}">See Details</a>
                         </div>
                     </div>
                 </div>

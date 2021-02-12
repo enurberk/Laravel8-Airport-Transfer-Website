@@ -13,4 +13,9 @@ class Transfer extends Model
     public function category(){
         return $this->belongsTo(Category::class);
     }
+
+    #One to Many
+    public function rezervation(){
+        return $this->hasMany(Rezervation::class);
+    }
 }

@@ -22,7 +22,7 @@
                 <h5 class="my-2 text-center text-uppercase">{{$data->title}}</h5>
                 <h5 class="heading mb-3 text-center" ><strong>Description:</strong> {{$data->description}}</h5>
                 <h5 class="heading mb-3 text-center" ><strong>Price :</strong> {{$data->base_price}} TL </h5>
-                <a href="{{route('booking')}}">Book Now </a>
+                <a href="{{route('user_rezervation_add')}}">Book Now </a>
             </div>
 
     </div>

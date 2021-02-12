@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::first();
-         $data = [
+        $data = [
             'setting' => $setting,
             'page'=>'home'
         ];
