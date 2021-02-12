@@ -26,8 +26,12 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::first();
+        $daily = Transfer::select('id','title','image','base_price','description','slug')->limit(4)->inRandomOrder()->get();
+        //print_r($daily);
+        //exit();
         $data = [
             'setting' => $setting,
+            'daily' => $daily,
             'page'=>'home'
         ];
         return view('home.index', $data);
