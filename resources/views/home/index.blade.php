@@ -72,7 +72,7 @@
                 </div>
                 <h5 class="my-2 text-center text-uppercase">{{$rs->title}} </h5>
                 <h5 class="heading mb-3 text-center">{{$rs->description}}</h5>
-                <a href="{{route('user_rezervation_add')}}">See Details </a>
+                <a href="{{route('transfer', ['id'=>$rs->id, 'slug'=>$rs->slug])}}">See Details </a>
             </div>
         @endforeach
         </div>
